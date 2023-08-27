@@ -1,0 +1,11 @@
+{
+    "name": "CSA-web",
+    "port": 8021,
+    "user_srv": {
+        "name": "CSA-srv"
+    },
+    "consul": {
+        "host": "175.178.156.205",
+        "port": 8500
+    }
+}

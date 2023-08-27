@@ -1,0 +1,7 @@
+host: '175.178.156.205'
+port: 8848
+namespace: '40b206a3-5bbd-4102-97ec-75a961921d88'
+user: 'nacos'
+password: 'nacos'
+dataid: 'CSA-srv.json'
+group: 'dev'

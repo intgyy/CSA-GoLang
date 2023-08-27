@@ -1,0 +1,76 @@
+syntax="proto3";
+option go_package=".;proto";
+package proto;
+
+service User{
+  rpc CreateUser(CreateUserRequest) returns(UserInfo);
+  rpc GetGoods(GetGoodsRequest) returns(GoodsList);
+  rpc FavoriteGoods(GoodsUserRequest) returns(SuccessResponse);
+  rpc GetFavoriteGoods(NameRequest) returns(GoodsList);
+  rpc ClearGoodsInCar(NameRequest)  returns(SuccessResponse);
+  rpc BuyAllGoodsInCar(NameRequest) returns(SuccessResponse);
+  rpc AddGoodsInCar(GoodsUserRequest) returns(CartInfo);
+  rpc ReduceGoodsInCar(GoodsUserRequest) returns(CartInfo);
+  rpc BuyGoods(GoodsUserRequest) returns(SuccessResponse);
+  rpc PublishGoods(CreateGoodsRequest) returns(GoodsInfo);
+  rpc DeleteGoods(GoodsUserRequest) returns(SuccessResponse);
+  rpc UpdateGoods(UpdateGoodsRequest) returns(GoodsInfo);
+  rpc CheckPassword(PasswordCheckInfo) returns (SuccessResponse);
+  rpc GetUserByName(NameRequest) returns(UserInfo);
+}
+message CartInfo{
+  int32 userId=1;
+  int32 goodsId=2;
+  int32 quantity=3;
+}
+message PasswordCheckInfo{
+  string password=1;
+  string encryptedPassword=2;
+}
+message UpdateGoodsRequest{
+  string title=1;
+  float price=2;
+  string content=3;
+  int32 goods_id=4;
+  string name=5;
+}
+message CreateGoodsRequest{
+  string title=1;
+  float price=2;
+  string content=3;
+  string name=4;
+}
+message GoodsUserRequest{
+  string name=1;
+  int32 goods_id=2;
+}
+
+message SuccessResponse{
+  bool success=1;
+}
+message NameRequest{
+  string name=1;
+}
+message GoodsList{
+  repeated GoodsInfo goodsList=1;
+}
+message CreateUserRequest{
+  string username=1;
+  string password=2;
+  float price=3;
+}
+message GetGoodsRequest{
+  string title=1;
+}
+message UserInfo{
+  int32 id=1;
+  string username=2;
+  string password=3;
+  float price=4;
+}
+message GoodsInfo{
+  int32 id=1;
+  string title=2;
+  float price=3;
+  string content=4;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "CSA-srv",
+    "mysql": {
+        "host": "175.178.156.205",
+        "port": 3306,
+        "user": "root",
+        "password": "root",
+        "db": "CSA-GoLang"
+    },
+    "consul": {
+        "host": "175.178.156.205",
+        "port": 8500
+    }
+}

@@ -1,0 +1,10 @@
+2023-08-23T15:16:00.586+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2023-08-23T15:16:01.089+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:CSA-srv.jsondev40b206a3-5bbd-4102-97ec-75a961921d88 tenant:40b206a3-5bbd-4102-97ec-75a961921d88] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2023-08-23T15:16:01.159+0800	[34mINFO[0m	config_client/config_client.go:435	[client.ListenConfig] config changed:CSA-srv.json%02dev%0240b206a3-5bbd-4102-97ec-75a961921d88%01
+
+2023-08-23T15:16:01.215+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:CSA-srv.jsondev2827905011804d0b8d0756f1266e357c40b206a3-5bbd-4102-97ec-75a961921d88 tenant:40b206a3-5bbd-4102-97ec-75a961921d88] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2023-08-23T15:16:30.751+0800	[34mINFO[0m	config_client/config_client.go:433	[client.ListenConfig] no change
+2023-08-23T15:16:30.762+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:CSA-srv.jsondev2827905011804d0b8d0756f1266e357c40b206a3-5bbd-4102-97ec-75a961921d88 tenant:40b206a3-5bbd-4102-97ec-75a961921d88] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
